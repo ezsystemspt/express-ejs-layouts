@@ -214,6 +214,16 @@ app.get('/', function(req, res) {
 );
 ```
 
+### Disable the layout for single render
+
+Just pass `false` as the layout.
+
+```
+app.get('/', function(req, res) {
+  res.render('the-view', { layout: false });
+);
+```
+
 ## Optional sections
 
 In a layout, you can have optional sections using `defineContent`:
